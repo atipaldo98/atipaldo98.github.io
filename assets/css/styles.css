@@ -12,6 +12,7 @@
   --secondary-color: #0032a0;
   --primary-shadow: #b88aa0;
   --secondary-shadow: #7882a0;
+  --top-margin: 0.5rem;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -148,27 +149,29 @@ nav ul li {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   padding: 0.938rem;
 }
 
 .card {
+  flex: 1;
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
   text-align: center;
-  width: 21.875rem;
+  /* width: 21.875rem; */
 }
 
-.card-img {
+/* .card-img {
   width: 65%;
   height: 60%;
-}
+} */
 
 .card-title {
+  margin-top: var(--top-margin);
   margin-bottom: var(--bottom-margin);
 }
 
@@ -201,6 +204,10 @@ nav ul li {
 .projects-header {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.project-img {
+  width: 65%;
 }
 
 .contact {
