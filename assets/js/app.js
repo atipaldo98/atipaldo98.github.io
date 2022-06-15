@@ -1,13 +1,13 @@
-// Nav hamburger selections
-const burger = document.querySelector("#burger-menu");
+// Nav menu
+const btn = document.querySelector("#mobile-button");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
-burger.addEventListener("click", () => {
+btn.addEventListener("click", () => {
     ul.classList.toggle("show");
 });
 
-// Close hamburger menu when a link is clicked
+// Close menu when link is clicked
 
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");

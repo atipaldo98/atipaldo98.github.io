@@ -63,7 +63,7 @@ nav {
 
 nav h1 {
   color: var(--bg-color);
-  margin-left: 20px;
+  margin: 0 20px;
   text-transform: uppercase;
   padding: 30px 0;
 }
@@ -98,12 +98,13 @@ nav ul li {
 }
 
 .mobile-button {
-  color: var(--primary-color);
+  color: var(--bg-color);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   display: none;
+  line-height: 50%;
 }
 
 .hero {
@@ -118,6 +119,8 @@ nav ul li {
 
 .hero img {
   padding: 20px 0;
+  width: 100%;
+  max-width: 375px;
 }
 
 .about {
@@ -149,6 +152,7 @@ nav ul li {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
   padding: 0.938rem;
@@ -162,13 +166,7 @@ nav ul li {
   padding: 20px;
   margin: 10px;
   text-align: center;
-  /* width: 21.875rem; */
 }
-
-/* .card-img {
-  width: 65%;
-  height: 60%;
-} */
 
 .card-title {
   margin-top: var(--top-margin);
@@ -239,43 +237,43 @@ footer {
 
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
-  nav {
-    padding: 1.5rem 1rem;
-  }
-
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     flex-direction: column;
+    gap: 0;
     top: 86px;
     left: 10%;
     width: 80%;
     text-align: center;
     transform: translateX(120%);
-    transition: transform 0.5s ease-in;
+    height: auto;
+    margin-right: 0;
   }
 
   nav ul li {
-    margin: 8px;
+    height: auto;
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding: 16px 5px;
+    width: 100%;
   }
 
   .mobile-button {
     display: block;
+    padding-right: 10px;
   }
 
   nav ul.show {
+    transition: transform 0.5s;
     transform: translateX(0);
   }
 
   .hero {
-    margin-top: -4rem;
     flex-direction: column;
     gap: 0;
-  }
-
-  .hero img {
-    height: 37.5rem;
-    width: 30rem;
   }
 
   .bio {
@@ -284,8 +282,7 @@ footer {
   }
 
   .about {
-    margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    padding: 2.5rem 3.5rem;
   }
 
   .about h2 {
@@ -315,11 +312,6 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
   .bio {
     width: 18.3rem;
   }
