@@ -163,7 +163,7 @@ nav ul li {
   display: none;
   margin: 20px auto;
   height: 500px;
-  width: 500px;
+  width: 100%;
 }
 
 #adobe-dc-view.show {
@@ -353,13 +353,6 @@ footer {
   .icon {
     width: 5.875rem;
     height: 5.25rem;
-  }
-}
-
-@media screen and (max-width: 612px) {
-  #adobe-dc-view {
-    height: 100%;
-    width: 100%;
   }
 }
 
