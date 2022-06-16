@@ -160,8 +160,10 @@ nav ul li {
 }
 
 #adobe-dc-view {
+  /* display: none; */
   margin: 20px auto;
-  display: none;
+  height: 500px;
+  width: 500px;
 }
 
 .skills {
@@ -351,6 +353,13 @@ footer {
   .icon {
     width: 5.875rem;
     height: 5.25rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #adobe-dc-view {
+    height: 100%;
+    width: 100%;
   }
 }
 
