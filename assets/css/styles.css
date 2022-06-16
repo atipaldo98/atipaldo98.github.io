@@ -278,8 +278,8 @@ footer {
   margin: 2rem 0 0;
 }
 
-@media screen and (max-width: 749px) {
-  .skills-container > div {
+@media screen and (max-width: 799px) {
+  .container > div {
     flex: 50%;
   }
 }
