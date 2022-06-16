@@ -17,3 +17,12 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+
+// Show resume preview when "View Resume" button is clicked
+const resumeBtn = document.querySelector("#resume-btn");
+const resumeDiv = document.querySelector("#adobe-dc-view");
+
+resumeBtn.addEventListener("click", () => {
+  resumeDiv.classList.toggle("show");
+});

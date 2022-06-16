@@ -138,6 +138,32 @@ nav ul li {
   padding: 0.4rem;
 }
 
+.resume-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-btn {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  font-size: 18px;
+  box-shadow: 1.5px 1.5px var(--primary-shadow);
+  border: 1px solid var(--primary-color);
+  padding: 10px 5px;
+  transition: var(--transition);
+}
+
+.resume-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-color-alt);
+  cursor: pointer;
+}
+
+#adobe-dc-view {
+  margin: 20px auto;
+  display: none;
+}
+
 .skills {
   max-width: 68.75rem;
   margin: auto;
