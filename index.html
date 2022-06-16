@@ -30,14 +30,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="hero" id="hero">
       <div class="hero-img-container">
         <img src="assets/images/fsc-logo-hq.png" alt="fsc-logo" loading="lazy" class="hero-img" />
       </div>
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <h2>About Me</h2>
       <p>Hello! My name is Alexander Tipaldo. I am a full-stack web developer located in central Florida.</p>
       <p>I graduated from Florida Southern College in 2019. Through internships and professional work, I have experience creating new websites from scratch, as well as maintaining and updating existing company websites.</p>
@@ -47,7 +47,7 @@
     <!-- Skills -->
     <section class="skills" id="skills">
       <h2 class="skills-header">Skills</h2>
-      <div class="container">
+      <div class="container skills-container">
         <div class="card">
           <img src="assets/icons/w3_html5-ar21.svg" class="card-img" alt="html-logo" loading="lazy" />
           <h3 class="card-title">Front-end</h3>
@@ -75,17 +75,25 @@
     <section class="projects" id="projects">
       <h2 class="projects-header">Projects</h2>
       <div class="container">
-        <div class="card">
-          <img src="assets/images/fscwebsite.png" class="card-img project-img" alt="fsc-website" loading="lazy" />
+        <div class="card project-card">
+          <div>
+            <img src="assets/images/fscwebsite.png" class="card-img project-img" alt="fsc-website" loading="lazy" />
+          </div>
           <h3 class="card-title">Florida Southern College</h3>
           <p class="card-details">Official Florida Southern website I worked on as work-study while I was enrolled. Focused on responsive, mobile-first design.</p>
-          <a href="https://www.flsouthern.edu" target="_blank" class="card-link">Visit Page</a>
+          <div class="card-link-container">
+            <a href="https://www.flsouthern.edu" target="_blank" class="card-link">Visit Page</a>
+          </div>
         </div>
-        <div class="card">
-          <img src="assets/images/emdeewebsite.png" class="card-img project-img" alt="emdee-website" loading="lazy" />
+        <div class="card project-card">
+          <div>
+            <img src="assets/images/emdeewebsite.png" class="card-img project-img" alt="emdee-website" loading="lazy" />
+          </div>
           <h3 class="card-title">eMDee Technology, Inc.</h3>
           <p class="card-details">External eMDee website that I overhauled during my time working at the company.</p>
-          <a href="https://www.emdee.com" target="_blank" class="card-link">Visit Page</a>
+          <div class="card-link-container">
+            <a href="https://www.emdee.com" target="_blank" class="card-link">Visit Page</a>
+          </div>
         </div>
       </div>
     </section>
