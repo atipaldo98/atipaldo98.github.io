@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap"); */
 
 /* Variables */
 :root {
@@ -336,10 +336,6 @@ footer {
 
   .about h2 {
     text-align: center;
-  }
-
-  .about p {
-    text-align: justify;
   }
 
   .card {
