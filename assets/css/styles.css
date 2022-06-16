@@ -160,10 +160,14 @@ nav ul li {
 }
 
 #adobe-dc-view {
-  /* display: none; */
+  display: none;
   margin: 20px auto;
   height: 500px;
   width: 500px;
+}
+
+#adobe-dc-view.show {
+  display: block;
 }
 
 .skills {
