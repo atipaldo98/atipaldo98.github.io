@@ -1,15 +1,18 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css" />
-
         <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+        <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" />
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/style.css" />
 
         <title>Alexander Tipaldo - Web Developer</title>
     </head>
@@ -32,7 +35,7 @@
         <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="hero-img-container">
-                <img src="assets/images/fsc-logo-hq.png" alt="fsc-logo" loading="lazy" class="hero-img" />
+                <img src="/assets/media/images/fsc-logo-hq.png" alt="fsc-logo" loading="lazy" class="hero-img" />
             </div>
         </section>
 
@@ -53,22 +56,22 @@
         <h2 class="skills-header">Skills</h2>
         <div class="container skills-container">
             <div class="card">
-                <img src="assets/icons/w3_html5-ar21.svg" class="card-img" alt="html-logo" loading="lazy" />
+                <img src="/assets/media/icons/w3_html5-ar21.svg" class="card-img" alt="html-logo" loading="lazy" />
                 <h3 class="card-title">Front-end</h3>
                 <p class="card-details">HTML, CSS, JavaScript, jQuery</p>
             </div>
             <div class="card">
-                <img src="assets/icons/php-ar21.svg" class="card-img" alt="php logo" loading="lazy" />
+                <img src="/assets/media/icons/php-ar21.svg" class="card-img" alt="php logo" loading="lazy" />
                 <h3 class="card-title">Back-end</h3>
                 <p class="card-details">PHP, Python, Java, and tools such as Apache and Django</p>
             </div>
             <div class="card">
-                <img src="assets/icons/mysql-ar21.svg" class="card-img" alt="mysql-logo" loading="lazy" />
+                <img src="/assets/media/icons/mysql-ar21.svg" class="card-img" alt="mysql-logo" loading="lazy" />
                 <h3 class="card-title">Database</h3>
                 <p class="card-details">Primarily MySQL, as well as Mongo, SQLite, and Access</p>
             </div>
             <div class="card">
-                <img src="assets/icons/linux-ar21.svg" class="card-img" alt="linux-logo" loading="lazy"/>
+                <img src="/assets/media/icons/linux-ar21.svg" class="card-img" alt="linux-logo" loading="lazy"/>
                 <h3 class="card-title">Maintenance</h3>
                 <p class="card-details">Maintained systems in both Windows and Linux</p>
             </div>
@@ -81,7 +84,7 @@
             <div class="container">
                 <div class="card project-card">
                     <div>
-                        <img src="assets/images/fscwebsite.png" class="card-img project-img" alt="fsc-website" loading="lazy" />
+                        <img src="/assets/media/images/fscwebsite.png" class="card-img project-img" alt="fsc-website" loading="lazy" />
                     </div>
                     <h3 class="card-title">Florida Southern College</h3>
                     <p class="card-details">Official Florida Southern website I worked on as work-study while I was enrolled. Focused on responsive, mobile-first design.</p>
@@ -91,7 +94,7 @@
                 </div>
                 <div class="card project-card">
                     <div>
-                        <img src="assets/images/emdeewebsite.png" class="card-img project-img" alt="emdee-website" loading="lazy" />
+                        <img src="/assets/media/images/emdeewebsite.png" class="card-img project-img" alt="emdee-website" loading="lazy" />
                     </div>
                     <h3 class="card-title">eMDee Technology, Inc.</h3>
                     <p class="card-details">External eMDee website that I overhauled during my time working at the company.</p>
@@ -107,10 +110,10 @@
             <h2>Contact</h2>
             <div class="container">
                 <a href="https://www.linkedin.com/in/alexander-tipaldo/" class="contact-item">
-                    <img src="assets/icons/linkedin-icon-72x72.png" alt="linkedin-logo" loading="lazy" class="icon" />
+                    <img src="/assets/media/icons/linkedin-icon-72x72.png" alt="linkedin-logo" loading="lazy" class="icon" />
                 </a>
                 <a href="mailto:contact.atipaldo@gmail.com" class="contact-item">
-                    <img src="assets/icons/mail-icon-72x72.png" alt="mail-icon" loading="lazy" class="icon" />
+                    <img src="/assets/media/icons/mail-icon-72x72.png" alt="mail-icon" loading="lazy" class="icon" />
                 </a>
             </div>
         </section>
@@ -121,9 +124,11 @@
         </footer>
 
         <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module" ></script>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>
