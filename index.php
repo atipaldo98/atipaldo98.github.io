@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Favicon -->
         <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" />
         <!-- CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/style.css" />
@@ -33,53 +35,83 @@
         </nav>
 
         <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-img-container">
-                <img src="/assets/media/images/fsc-logo-hq.png" alt="fsc-logo" loading="lazy" class="hero-img" />
+        <section id="hero">
+            <div class="row">
+                <div class="col-12">
+                    <img src="/assets/media/images/fsc-logo-hq.png" alt="fsc-logo" loading="lazy" class="hero-img" />
+                </div>
             </div>
         </section>
 
         <!-- About -->
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Alexander Tipaldo. I am a full-stack web developer located in central Florida.</p>
-            <p>I graduated from Florida Southern College in 2019. Through professional work and internships, I have experience creating new websites from scratch, as well as maintaining and updating existing company websites.</p>
-            <p>My skills in the web space include front- and back-end development, database design and management, and responsive web design. I also have experience with many other tools and languages in order to be prepared for any services a company already has in place.</p>
-            <div class="resume-btn-container">
-                <button class="resume-btn" id="resume-btn">View Resume</button>
+        <section id="about">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Alexander Tipaldo. I am a full-stack web developer located in central Florida.</p>
+                    <p>I graduated from Florida Southern College in 2019. Through professional work and internships, I have experience creating new websites from scratch, as well as maintaining and updating existing company websites.</p>
+                    <p>My skills in the web space include front- and back-end development, database design and management, and responsive web design. I also have experience with many other tools and languages in order to be prepared for any services a company already has in place.</p>
+                </div>
             </div>
-            <div id="adobe-dc-view"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="resume-btn-container">
+                        <button class="resume-btn" id="resume-btn">View Resume</button>
+                    </div>
+                    <div id="adobe-dc-view"></div>
+                </div>
+            </div>
         </section>
 
         <!-- Skills -->
-        <section class="skills" id="skills">
-        <h2 class="skills-header">Skills</h2>
-        <div class="container skills-container">
-            <div class="card">
-                <img src="/assets/media/icons/w3_html5-ar21.svg" class="card-img" alt="html-logo" loading="lazy" />
-                <h3 class="card-title">Front-end</h3>
-                <p class="card-details">HTML, CSS, JavaScript, jQuery</p>
+        <section id="skills">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="mb-4">Skills</h2>
+                </div>
             </div>
-            <div class="card">
-                <img src="/assets/media/icons/php-ar21.svg" class="card-img" alt="php logo" loading="lazy" />
-                <h3 class="card-title">Back-end</h3>
-                <p class="card-details">PHP, Python, Java, and tools such as Apache and Django</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/assets/media/icons/w3_html5-ar21.svg" class="card-img-top" alt="HTML logo" loading="lazy" />
+                            <h3 class="card-title">Front-end</h3>
+                            <p class="card-details">HTML, CSS, JavaScript, jQuery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/assets/media/icons/php-ar21.svg" class="card-img-top" alt="PHP logo" loading="lazy" />
+                            <h3 class="card-title">Back-end</h3>
+                            <p class="card-details">PHP, Python, Java, and tools such as Apache and Django</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/assets/media/icons/mysql-ar21.svg" class="card-img-top" alt="MySQL logo" loading="lazy" />
+                            <h3 class="card-title">Database</h3>
+                            <p class="card-details">Primarily MySQL, as well as Mongo, SQLite, and Access</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/assets/media/icons/linux-ar21.svg" class="card-img-top" alt="Linux logo" loading="lazy" />
+                            <h3 class="card-title">Maintenance</h3>
+                            <p class="card-details">Maintained systems in both Windows and Linux</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="/assets/media/icons/mysql-ar21.svg" class="card-img" alt="mysql-logo" loading="lazy" />
-                <h3 class="card-title">Database</h3>
-                <p class="card-details">Primarily MySQL, as well as Mongo, SQLite, and Access</p>
-            </div>
-            <div class="card">
-                <img src="/assets/media/icons/linux-ar21.svg" class="card-img" alt="linux-logo" loading="lazy"/>
-                <h3 class="card-title">Maintenance</h3>
-                <p class="card-details">Maintained systems in both Windows and Linux</p>
-            </div>
-        </div>
         </section>
 
         <!-- Projects -->
-        <section class="projects" id="projects">
+        <section id="projects">
             <h2 class="projects-header">Projects</h2>
             <div class="container">
                 <div class="card project-card">
@@ -106,7 +138,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="contact" id="contact">
+        <section id="contact">
             <h2>Contact</h2>
             <div class="container">
                 <a href="https://www.linkedin.com/in/alexander-tipaldo/" class="contact-item">
