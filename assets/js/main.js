@@ -2,7 +2,7 @@
 
 var adobeDCView;
 
-document.ready(function() {
+$(document).ready(function() {
     $('#mobile-button').on('click', function() {
         $('nav ul').toggleClass('show');
     });

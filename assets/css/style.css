@@ -59,34 +59,21 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav h1 {
+.nav_title {
     color: var(--bg-color);
     margin: 0 20px;
     text-transform: uppercase;
     padding: 30px 0;
 }
 
-nav a {
-    color: var(--bg-color);
-    transition: var(--transition);
-    padding: 30px 10px;
-    min-width: 71px;
-    text-align: center;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-    background-color: var(--bg-color);
-}
-
-nav ul {
+.nav_bar {
     display: flex;
     align-items: center;
     margin-right: 20px;
     height: 100%;
 }
 
-nav ul li {
+.nav_tab {
     font-weight: var(--bold-font);
     list-style: none;
     display: flex;
@@ -94,7 +81,20 @@ nav ul li {
     align-items: center;
 }
 
-.mobile-button {
+.nav_link {
+    color: var(--bg-color);
+    transition: var(--transition);
+    padding: 30px 10px;
+    min-width: 71px;
+    text-align: center;
+}
+
+.nav_link:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+}
+
+.mobile_button {
     color: var(--bg-color);
     font-size: 2rem;
     border: 0;
@@ -114,7 +114,7 @@ nav ul li {
     margin: auto;
 }
 
-#hero img {
+.hero_img {
     padding: 20px 0;
     width: 100%;
     max-width: 375px;
@@ -136,12 +136,12 @@ nav ul li {
     padding: 0.4rem;
 }
 
-.resume-btn-container {
+.resume_container {
     margin-top: 20px;
     text-align: center;
 }
 
-.resume-btn {
+.resume_btn {
     color: var(--bg-color);
     background-color: var(--primary-color);
     font-size: 18px;
@@ -157,14 +157,14 @@ nav ul li {
     cursor: pointer;
 }
 
-#adobe-dc-view {
+#adobe_view {
     display: none;
     margin: 20px auto;
     height: 500px;
     width: 100%;
 }
 
-#adobe-dc-view.show {
+#adobe_view.show {
     display: block;
 }
 
@@ -175,7 +175,7 @@ nav ul li {
     margin-top: 2.5rem;
 }
 
-.container {
+.skills_container {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -230,7 +230,7 @@ nav ul li {
     margin-top: 2rem;
 }
 
-.projects-header {
+.section_header {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -280,8 +280,9 @@ footer {
 
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
-    nav ul {
+    .nav_bar {
         position: fixed;
+        color: #fff;
         background-color: var(--primary-color);
         flex-direction: column;
         gap: 0;
@@ -294,22 +295,22 @@ footer {
         margin-right: 0;
     }
 
-    nav ul li {
+    .nav_tab {
         height: auto;
         width: 100%;
     }
 
-    nav ul li a {
+    .nav_link {
         padding: 16px 5px;
         width: 100%;
     }
 
-    .mobile-button {
+    .mobile_button {
         display: block;
         padding-right: 10px;
     }
 
-    nav ul.show {
+    .nav_bar.show {
         transition: transform 0.5s;
         transform: translateX(0);
     }
@@ -336,7 +337,7 @@ footer {
         width: 20.875rem;
     }
 
-    .projects-container {
+    #projects .container {
         flex-direction: column;
     }
 
