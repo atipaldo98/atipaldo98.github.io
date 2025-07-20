@@ -151,7 +151,7 @@ nav {
     transition: var(--transition);
 }
 
-.resume-btn:hover {
+.resume_btn:hover {
     color: var(--primary-color);
     background-color: var(--bg-color-alt);
     cursor: pointer;
@@ -193,23 +193,23 @@ nav {
     text-align: center;
 }
 
-.card-title {
+.card_title {
     margin-top: var(--top-margin);
     margin-bottom: var(--bottom-margin);
 }
 
-.card-details {
+.card_details {
     padding: 0.4rem;
     margin-bottom: var(--bottom-margin);
 }
 
-.card-link-container {
+.card_link_container {
     margin: 5px 0;
     align-self: flex-end;
     width: 100%;
 }
 
-.card-link {
+.card_link {
     text-decoration: none;
     background-color: var(--primary-color);
     color: var(--bg-color);
@@ -219,7 +219,7 @@ nav {
     transition: var(--transition);
 }
 
-.card-link:hover {
+.card_link:hover {
     color: var(--primary-color);
     background-color: var(--bg-color);
 }
@@ -235,14 +235,8 @@ nav {
     margin-bottom: 1rem;
 }
 
-.project-img {
+.project_img {
     width: 65%;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 #contact {
@@ -254,7 +248,7 @@ nav {
     margin-bottom: var(--bottom-margin-2);
 }
 
-.contact-item {
+.contact_item {
     display: flex;
     align-items: center;
     padding: 5px;
@@ -279,7 +273,6 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
-  /*changes reflects on screen with a width of 720px and below*/
     .nav_bar {
         position: fixed;
         color: #fff;

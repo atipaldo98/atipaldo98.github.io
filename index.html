@@ -4,7 +4,7 @@
         <title>Alexander Tipaldo - Web Developer</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png">
+        <link rel="shortcut icon" href="/assets/media/icons/favicon-32x32.png">
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap">
         <!-- CSS -->
@@ -16,7 +16,7 @@
         <!-- Navbar -->
         <nav>
             <h1 class="nav_title">Alexander Tipaldo</h1>
-            <ul class="nav_bar">
+            <ul class="nav_bar mb-0">
                 <li class="nav_tab">
                     <a href="#about" class="nav_link">About</a>
                 </li>
@@ -70,24 +70,24 @@
             <h2 class="section_header">Skills</h2>
             <div class="container skills_container">
                 <div class="card">
-                    <img src="/assets/media/icons/w3_html5-ar21.svg" class="card-img" alt="html-logo">
-                    <h3 class="card-title">Front-end</h3>
-                    <p class="card-details">HTML, CSS, JavaScript, jQuery</p>
+                    <img src="/assets/media/icons/w3_html5-ar21.svg" alt="HTML logo">
+                    <h3 class="card_title">Front-end</h3>
+                    <p class="card_details">HTML, CSS, JavaScript, jQuery</p>
                 </div>
                 <div class="card">
-                    <img src="/assets/media/icons/php-ar21.svg" class="card-img" alt="php logo">
-                    <h3 class="card-title">Back-end</h3>
-                    <p class="card-details">PHP, Python, Java, and tools such as Apache and Django</p>
+                    <img src="/assets/media/icons/php-ar21.svg" alt="PHP logo">
+                    <h3 class="card_title">Back-end</h3>
+                    <p class="card_details">PHP, Python, Java, and tools such as Apache and Django</p>
                 </div>
                 <div class="card">
-                    <img src="/assets/media/icons/mysql-ar21.svg" class="card-img" alt="mysql-logo">
-                    <h3 class="card-title">Database</h3>
-                    <p class="card-details">Primarily MySQL, as well as Mongo, SQLite, and Access</p>
+                    <img src="/assets/media/icons/mysql-ar21.svg" alt="MySQL logo">
+                    <h3 class="card_title">Database</h3>
+                    <p class="card_details">Primarily MySQL, as well as Mongo, SQLite, and Access</p>
                 </div>
                 <div class="card">
-                    <img src="/assets/media/icons/linux-ar21.svg" class="card-img" alt="linux-logo">
-                    <h3 class="card-title">Maintenance</h3>
-                    <p class="card-details">Maintained systems in both Windows and Linux</p>
+                    <img src="/assets/media/icons/linux-ar21.svg" alt="Linux logo">
+                    <h3 class="card_title">Maintenance</h3>
+                    <p class="card_details">Maintained systems in both Windows and Linux</p>
                 </div>
             </div>
         </section>
@@ -96,24 +96,24 @@
         <section id="projects">
             <h2 class="section_header">Projects</h2>
             <div class="container">
-                <div class="card project-card">
+                <div class="card d-flex flex-column justify-content-between">
                     <div>
-                        <img src="/assets/media/images/fscwebsite.png" class="card-img project-img" alt="fsc-website">
+                        <img src="/assets/media/images/fscwebsite.png" class="project_img" alt="Florida Southern College website">
                     </div>
-                    <h3 class="card-title">Florida Southern College</h3>
-                    <p class="card-details">Official Florida Southern website I worked on as work-study while I was enrolled. Focused on responsive, mobile-first design.</p>
-                    <div class="card-link-container">
-                        <a href="https://www.flsouthern.edu" target="_blank" class="card-link">Visit Page</a>
+                    <h3 class="card_title">Florida Southern College</h3>
+                    <p class="card_details">Official Florida Southern website I worked on as work-study while I was enrolled. Focused on responsive, mobile-first design.</p>
+                    <div class="card_link_container">
+                        <a href="https://www.flsouthern.edu" target="_blank" class="card_link">Visit Page</a>
                     </div>
                 </div>
-                <div class="card project-card">
+                <div class="card d-flex flex-column justify-content-between">
                     <div>
-                        <img src="/assets/media/images/emdeewebsite.png" class="card-img project-img" alt="emdee-website">
+                        <img src="/assets/media/images/emdeewebsite.png" class="project_img" alt="eMDee Technology website">
                     </div>
-                    <h3 class="card-title">eMDee Technology, Inc.</h3>
-                    <p class="card-details">External eMDee website that I overhauled during my time working at the company.</p>
-                    <div class="card-link-container">
-                        <a href="https://www.emdee.com" target="_blank" class="card-link">Visit Page</a>
+                    <h3 class="card_title">eMDee Technology, Inc.</h3>
+                    <p class="card_details">External eMDee website that I overhauled during my time working at the company.</p>
+                    <div class="card_link_container">
+                        <a href="https://www.emdee.com" target="_blank" class="card_link">Visit Page</a>
                     </div>
                 </div>
             </div>
@@ -122,19 +122,23 @@
         <!-- Contact -->
         <section id="contact">
             <h2 class="section_header">Contact</h2>
-            <div class="container">
-                <a href="https://www.linkedin.com/in/alexander-tipaldo/" class="contact-item">
-                    <img src="/assets/media/icons/linkedin-icon-72x72.png" alt="linkedin-logo" class="icon">
-                </a>
-                <a href="mailto:contact.atipaldo@gmail.com" class="contact-item">
-                    <img src="/assets/media/icons/mail-icon-72x72.png" alt="mail-icon" class="icon">
-                </a>
+            <div class="row">
+                <div class="col-6">
+                    <a href="https://www.linkedin.com/in/alexander-tipaldo/" class="contact_item">
+                        <img src="/assets/media/icons/linkedin-icon-72x72.png" alt="LinkedIn logo" class="icon">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="mailto:contact.atipaldo@gmail.com" class="contact_item">
+                        <img src="/assets/media/icons/mail-icon-72x72.png" alt="mail-icon" class="icon">
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer>
-            <small class="copy">&copy; Copyright 2022</small>
+            <small class="copy">&copy; Copyright 2025</small>
         </footer>
 
         <!-- Scripts -->

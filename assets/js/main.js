@@ -19,7 +19,7 @@ $(document).ready(function() {
 document.addEventListener("adobe_dc_view_sdk.ready", function() {
     adobeDCView = new AdobeDC.View({
         clientId: "e2a54f4951124f24bc4a1a7e1072cab4", 
-        divId: "adobe-dc-view"
+        divId: "adobe_view"
     });
     adobeDCView.previewFile({
         content: {
