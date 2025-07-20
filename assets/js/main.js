@@ -27,16 +27,16 @@ function setupCopyright() {
 }
 
 function setupHandlers() {
-    $('#mobile-button').on('click', function() {
+    $('#mobile_button').on('click', function() {
         $('nav ul').toggleClass('show');
     });
 
-    $('.nav-link').on('click', function() {
+    $('.nav_link').on('click', function() {
         $('nav ul').removeClass('show');
     });
 
-    $('#resume-btn').on('click', function() {
-        $('#adobe-dc-view').toggleClass('show');
+    $('#resumeBtn').on('click', function() {
+        $('#adobe_view').toggleClass('show');
     });
 }
 
