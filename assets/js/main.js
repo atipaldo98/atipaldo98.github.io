@@ -2,25 +2,6 @@
 
 var adobeDCView;
 
-function setupCopyright() {
-    let cyear = gmdate('Y');
-    $('#footer').html(`&copy; Copyright ${cyear}`);
-}
-
-$(document).ready(function() {
-    $('#mobile-button').on('click', function() {
-        $('nav ul').toggleClass('show');
-    });
-
-    $('.nav-link').on('click', function() {
-        $('nav ul').removeClass('show');
-    });
-
-    $('#resume-btn').on('click', function() {
-        $('#adobe-dc-view').toggleClass('show');
-    });
-});
-
 document.addEventListener("adobe_dc_view_sdk.ready", function() {
     adobeDCView = new AdobeDC.View({
         clientId: "e2a54f4951124f24bc4a1a7e1072cab4", 
@@ -38,4 +19,28 @@ document.addEventListener("adobe_dc_view_sdk.ready", function() {
     }, {
         embedMode: "SIZED_CONTAINER"
     });
+});
+
+function setupCopyright() {
+    let cyear = gmdate('Y');
+    $('#footer').html(`&copy; Copyright ${cyear}`);
+}
+
+function setupHandlers() {
+    $('#mobile-button').on('click', function() {
+        $('nav ul').toggleClass('show');
+    });
+
+    $('.nav-link').on('click', function() {
+        $('nav ul').removeClass('show');
+    });
+
+    $('#resume-btn').on('click', function() {
+        $('#adobe-dc-view').toggleClass('show');
+    });
+}
+
+$(document).ready(function() {
+    setupHandlers();
+    setupCopyright();
 });
