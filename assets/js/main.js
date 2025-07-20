@@ -2,13 +2,18 @@
 
 var adobeDCView;
 
+function setupCopyright() {
+    let cyear = gmdate('Y');
+    $('#footer').html(`&copy; Copyright ${cyear}`);
+}
+
 $(document).ready(function() {
     $('#mobile-button').on('click', function() {
         $('nav ul').toggleClass('show');
     });
 
     $('.nav-link').on('click', function() {
-        $('nav ul').removeClass('sho')
+        $('nav ul').removeClass('show');
     });
 
     $('#resume-btn').on('click', function() {
